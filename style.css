@@ -1,0 +1,4 @@
+/* Add spacing for the checkbox section */
+form div {
+  margin: 10px 0;
+}
