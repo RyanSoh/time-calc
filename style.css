@@ -56,3 +56,15 @@ button:hover {
   color: #333;
 }
 
+/* Align the checkbox and label on the same line */
+div input[type="checkbox"] + label {
+  display: inline;
+  margin-left: 5px; /* Adjust spacing between checkbox and label */
+}
+
+/* Optional: Style the div for better spacing */
+form div {
+  margin: 10px 0;
+}
+
+
