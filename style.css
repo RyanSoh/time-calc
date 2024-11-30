@@ -1,4 +1,4 @@
-/* Apply the Montserrat font to the entire body */
+/* Import Montserrat font */
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f4f4f9;
@@ -7,54 +7,86 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  color: #333;
 }
 
 .container {
   text-align: center;
   background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
 }
 
 h1 {
-  color: #333;
-  font-weight: 700;
+  color: #007bff;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 label {
   display: block;
   margin-bottom: 10px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
-input {
-  width: 200px;
+input[type="number"] {
+  width: calc(100% - 20px);
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+  border-color: #007bff;
+}
+
+.checkbox-container {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
 }
 
 button {
-  padding: 10px 15px;
+  padding: 12px 20px;
   background-color: #007bff;
-  color: #fff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  font-weight: 700;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
   background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
 }
 
 #result {
   margin-top: 20px;
   font-size: 18px;
+  font-weight: 600;
   color: #333;
 }
+
 
 
 
