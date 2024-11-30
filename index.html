@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plane Registration Time Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Plane Registration Time Calculator</h1>
+    <form id="calculator-form">
+      <label for="registration-number">Enter Plane Registration Number:</label>
+      <input type="number" id="registration-number" required>
+      
+      <div>
+        <input type="checkbox" id="add-48" />
+        <label for="add-48">Add 48 to the time</label>
+      </div>
+
+      <button type="submit">Calculate Time</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
